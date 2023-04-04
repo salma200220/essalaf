@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.SignupController">
+    <children>
+
+        <Label layoutX="104.0" layoutY="24.0" prefHeight="56.0" prefWidth="154.0" text="Sign up" textFill="#fab82a">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font></Label>
+        <Label layoutX="198.0" layoutY="67.0" text="Essalaf" textFill="#96982e">
+            <font>
+                <Font size="16.0" />
+            </font></Label>
+        <Label layoutX="283.0" layoutY="174.0" text="  user name">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <Label layoutX="290.0" layoutY="216.0" text="Phone ">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font></Label>
+        <TextField fx:id="tf_username" layoutX="380.0" layoutY="174.0" promptText="name" />
+        <TextField fx:id="tf_phone" layoutX="380.0" layoutY="216.0" promptText="phone" />
+
+        <Button fx:id="button_login" layoutX="470.0" layoutY="287.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #fbbc2a;" text="sign up" />
+        <Label fx:id="wronglogin" layoutX="390.0" layoutY="142.0" prefHeight="17.0" prefWidth="128.0" text="." textFill="#fd0d0d" />
+      <ImageView fitHeight="279.0" fitWidth="575.0" layoutX="-1.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../src/main/resources/imagee.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="154.0" layoutX="370.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../src/main/resources/imag.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="login" layoutX="470.0" layoutY="360.0" mnemonicParsing="false" onAction="#Onlogin" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #fbbc2a;" text="login" />
+      <Label layoutX="365.0" layoutY="331.0" prefHeight="17.0" prefWidth="101.0" text="déja un member!" textFill="#8c8f35" />
+    </children>
+
+</AnchorPane>

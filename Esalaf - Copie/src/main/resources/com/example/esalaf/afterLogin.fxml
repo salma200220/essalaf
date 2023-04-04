@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.esalaf.AfterLoginController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label fx:id="label_welcom" layoutX="8.0" layoutY="6.0" prefHeight="56.0" prefWidth="211.0" text="welcom to Essalaf " textFill="#fab82a">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font></Label>
+        <Button fx:id="button_logout" layoutX="464.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #fbbc2a;" text="logout" />
+        <Label layoutX="494.0" layoutY="297.0" text="not a member ?" />
+        <Button fx:id="button_produit" layoutX="24.0" layoutY="62.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="produit" textFill="#5319ff" underline="true" />
+        <Button fx:id="button_credit" layoutX="24.0" layoutY="104.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="credit" textFill="#5319ff" underline="true" />
+        <Button fx:id="button_panier" layoutX="529.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="panier" textFill="#5319ff" underline="true" />
+    </children>
+</AnchorPane>

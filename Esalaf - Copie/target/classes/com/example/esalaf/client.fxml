@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="398.0" prefWidth="601.0" style="-fx-background-color: #d4cfcd;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.HelloController">
+   <children>
+      <Label layoutX="71.0" layoutY="28.0" prefHeight="27.0" prefWidth="165.0" text="Gestion des clients" textFill="#efa722">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TableView fx:id="mytab" layoutX="1.0" layoutY="98.0" prefHeight="308.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="col_nom" prefWidth="114.33332061767578" text="Nom" />
+            <TableColumn fx:id="col_tele" prefWidth="111.66670227050781" text="Tele" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="303.0" prefHeight="406.0" prefWidth="299.0" style="-fx-background-color: #ffffff;">
+         <children>
+           
+            <Label layoutX="19.0" layoutY="250.0" text="Telephone">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="203.0" prefHeight="27.0" prefWidth="80.0" text="Nom">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom" layoutX="146.0" layoutY="203.0" prefHeight="27.0" prefWidth="130.0" />
+            <TextField fx:id="tele" layoutX="146.0" layoutY="251.0" prefHeight="25.0" prefWidth="130.0" />
+            <TextField fx:id="idClient" onMouseClicked="#getSelected" opacity="0.0" />
+            <Button fx:id="ok" layoutX="21.0" layoutY="310.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #cccbc3;" text="ajouter" />
+            <Button fx:id="btnDetele" layoutX="195.0" layoutY="310.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" style="-fx-background-color: #cccbc3;" text="supprimer" />
+            <Button fx:id="btnUpdate" layoutX="104.0" layoutY="310.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #cccbc3;" text="modifier" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../../../src/main/resources/image.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="cancelButton" layoutX="22.0" layoutY="347.0" mnemonicParsing="false" onAction="#OnGoHomeClick" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #ffca38;" text="menu" />
+            <Button fx:id="cancelButton" layoutX="157.0" layoutY="347.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #ffca38;" text="cancel" />
+            
+
+         </children>
+      </AnchorPane>
+      <Button layoutX="200.0" layoutY="66.0" mnemonicParsing="false" onAction="#onSearchButtonClick" prefHeight="25.0" prefWidth="80.0" text="rechercher" />
+      <TextField fx:id="searchField" layoutX="27.0" layoutY="66.0" prefHeight="25.0" prefWidth="165.0" promptText="Entrez votre recherche ici" />
+   </children>
+</AnchorPane>
